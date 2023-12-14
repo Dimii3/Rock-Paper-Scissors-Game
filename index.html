@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock Papper & Scissors</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="/main.css" />
+		<script src="https://kit.fontawesome.com/1ddfd708d9.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__heading">Rock Paper & Scissors</h1>
+			<p class="header__description">Choose your move!</p>
+		</header>
+		<main>
+			<section class="game">
+				<div class="buttons">
+					<button class="btn rock" id="rock">Rock &#x1F44a;</button>
+					<button class="btn paper" id="paper">Paper &#x1f590;</button>
+					<button class="btn scissors" id="scissors">Scissors &#x270c;</button>
+				</div>
+				<div class="scoreboard">
+					<p class="result">Let's start!</p>
+					<p class="score">
+						Your score: <span class="user-score">0</span> Bot score:
+						<span class="bot-score">0</span>
+					</p>
+				</div>
+                <button class="restart-game">Rematch!</button>
+			</section>
+		</main>
+		<script src="/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background-color: #fbab7e;
+	background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.header {
+	margin-bottom: 40px;
+}
+
+.header__heading {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header__description {
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+	font-weight: 400;
+	color: #333;
+}
+
+.game {
+	position: relative;
+	overflow: hidden;
+}
+.buttons {
+	display: flex;
+	gap: 30px;
+}
+
+.btn {
+	width: 100px;
+	height: 100px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: none;
+	border-radius: 6px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	text-shadow: 0px 0px 4px rgb(0, 0, 0);
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: scale(0.95);
+}
+
+.scoreboard {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #333;
+}
+
+.rock {
+	background-color: rgb(61, 135, 255);
+}
+
+.paper {
+	background-color: rgb(255, 64, 61);
+}
+
+.scissors {
+	background-color: rgb(61, 255, 106);
+}
+
+.result {
+	text-shadow: 0px 0px 4px rgb(0, 0, 0);
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 15px;
+}
+
+.user-score,
+.bot-score {
+	margin-right: 10px;
+	color: #fff;
+	font-size: 22px;
+	text-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+
+.restart-game {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -500%);
+	padding: 10px 30px;
+	font-family: inherit;
+	border-radius: 6px;
+	border: none;
+	font-size: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	text-shadow: 0px 0px 4px rgb(0, 0, 0, 0.1);
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+	cursor: pointer;
+}
+
+.restart-game.show {
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+
+@media (max-width: 576px) {
+	.header {
+		padding: 0 10px;
+	}
+	.header__heading {
+		font-size: 30px;
+	}
+	.game {
+		padding: 0 10px;
+	}
+	.buttons {
+		align-items: center;
+		flex-direction: column;
+	}
+}
